@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactSection = () => {
   return (
-    <section className="w-full bg-gray-100 py-12 px-4" id="contact">
+    <section className="w-full py-12 px-4" id="contact">
       <h2 className="text-4xl sm:text-5xl font-bold text-indigo-600 mb-8 text-center">
           Contact<span className="text-black">.</span>
         </h2>
@@ -11,9 +11,9 @@ const ContactSection = () => {
         {/* Left Side - Image */}
         <div className="flex justify-center">
           <img
-            src="./src/assets/contact.jpg"
+            src="./src/assets/contact.webp"
             alt="Contact"
-            className="rounded-xl shadow-lg w-full max-w-md"
+            className="rounded-xl w-full max-w-md"
           />
         </div>
 

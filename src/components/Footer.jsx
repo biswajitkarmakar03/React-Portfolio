@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 py-8">
+    <footer className="bg-gray-100 border-t border-gray-200 py-8">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
         
         {/* Left - Brand */}

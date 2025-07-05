@@ -1,5 +1,5 @@
 import { Download } from "lucide-react";
-import heroImage from "../assets/hero2.jpg"; // Replace with your image
+import heroImage from "../assets/hero.webp"; // Replace with your image
 import "../styles/hero.css";
 
 const HeroSection = () => {

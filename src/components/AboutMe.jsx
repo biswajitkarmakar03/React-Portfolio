@@ -1,4 +1,4 @@
-import aboutImage from "../assets/hero.jpg"; // Replace with your image path
+import aboutImage from "../assets/about.webp"; // Replace with your image path
 
 const AboutMe = () => {
   return (
