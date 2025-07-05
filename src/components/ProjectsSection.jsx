@@ -1,20 +1,34 @@
 import { useState } from "react";
 import siteImg1 from "../assets/projects/site-1.jpg";
 import siteImg2 from "../assets/projects/site-2.png";
-import designImg1 from "../assets/projects/design-1.png";
+import siteImg3 from "../assets/projects/site-3.png";
+import siteImg4 from "../assets/projects/site-4.png";
+import designImg1 from "../assets/projects/design-1.jpg";
 import designImg2 from "../assets/projects/design-2.jpg";
+import designImg3 from "../assets/projects/design-3.jpg";
+import designImg4 from "../assets/projects/design-4.jpg";
 
 const ProjectsSection = () => {
   // Sample data ─ swap in your own screenshots / links
   const websiteProjects = [
     {
-      title: "Travel Planner App",
+      title: "E-Education Site",
       image: siteImg1,
       link: "https://softqonic.com",
     },
     {
       title: "Health & Wellness Site",
       image: siteImg2,
+      link: "https://softqonic.com",
+    },
+    {
+      title: "Travel Planner App",
+      image: siteImg3,
+      link: "https://softqonic.com",
+    },
+    {
+      title: "Service Site [Client Work]",
+      image: siteImg4,
       link: "https://softqonic.com",
     },
   ];
@@ -28,6 +42,16 @@ const ProjectsSection = () => {
     {
       title: "Social Media Creatives",
       image: designImg2,
+      link: "https://softqonic.com",
+    },
+    {
+      title: "Social Media Creatives",
+      image: designImg3,
+      link: "https://softqonic.com",
+    },
+    {
+      title: "Social Media Creatives",
+      image: designImg4,
       link: "https://softqonic.com",
     },
   ];
@@ -57,7 +81,7 @@ const ProjectsSection = () => {
                     : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                 }`}
             >
-              {tab === "websites" ? "Websites" : "Design"}
+              {tab === "websites" ? "Websites" : "Designs"}
             </button>
           ))}
         </div>

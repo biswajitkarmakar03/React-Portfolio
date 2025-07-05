@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactImage from "../assets/contact.webp";
 
 const ContactSection = () => {
   return (
@@ -11,7 +12,7 @@ const ContactSection = () => {
         {/* Left Side - Image */}
         <div className="flex justify-center">
           <img
-            src="./src/assets/contact.webp"
+            src={ContactImage}
             alt="Contact"
             className="rounded-xl w-full max-w-md"
           />

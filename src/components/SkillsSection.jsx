@@ -1,23 +1,18 @@
-    import htmlLogo from "../assets/skills/html.png";
-    import cssLogo from "../assets/skills/css.png";
-    import jsLogo from "../assets/skills/js.png";
-    import reactLogo from "../assets/skills/react.png";
-    import tailwindLogo from "../assets/skills/tailwind.png";
-    import nodeLogo from "../assets/skills/node.png";
-    import phpLogo from "../assets/skills/php.png";
-    import mysqlLogo from "../assets/skills/mysql.png";
-    import gitLogo from "../assets/skills/git.png";
-    import psLogo from "../assets/skills/ps.png";
-    import exLogo from "../assets/skills/express.png";
-    import dbLogo from "../assets/skills/mongo.png";
-    import btLogo from "../assets/skills/bootstrap.png";
-    import figmaLogo from "../assets/skills/figma.png"
+    import reactLogo from "../assets/skills/react.webp";
+    import tailwindLogo from "../assets/skills/tailwind.webp";
+    import nodeLogo from "../assets/skills/node.webp";
+    import phpLogo from "../assets/skills/php.webp";
+    import mysqlLogo from "../assets/skills/mysql.webp";
+    import gitLogo from "../assets/skills/git.webp";
+    import psLogo from "../assets/skills/ps.webp";
+    import exLogo from "../assets/skills/express.webp";
+    import dbLogo from "../assets/skills/mongo.webp";
+    import figmaLogo from "../assets/skills/figma.webp"
 
     const SkillsSection = () => {
     const skills = [
         { name: "React", logo: reactLogo },
         { name: "Tailwind", logo: tailwindLogo },
-        { name: "BootStrap", logo: btLogo },
         { name: "Node.js", logo: nodeLogo },
         { name: "Mongo DB", logo: dbLogo },
         { name: "Express Js", logo: exLogo },
@@ -35,7 +30,7 @@
         <div className="max-w-7xl mx-auto px-4 text-center">
             <h2 className="text-4xl sm:text-5xl font-bold text-indigo-600 mb-12">Skills<span className="text-black">.</span></h2>
             
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
             {skills.map((skill, index) => (
                 <div
                 key={index}
