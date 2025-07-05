@@ -1,0 +1,34 @@
+import aboutImage from "../assets/hero.jpg"; // Replace with your image path
+
+const AboutMe = () => {
+  return (
+    <section className="bg-white py-20" id="about">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+        
+        {/* Left - Image */}
+        <div className="flex justify-center">
+          <img
+            src={aboutImage}
+            alt="About Me"
+            className="w-full max-w-sm md:max-w-md object-cover rounded-2xl"
+          />
+        </div>
+
+        {/* Right - Text */}
+        <div className="space-y-6">
+          <h2 className="text-4xl sm:text-4xl font-bold text-indigo-600"><span className="text-black">About</span> Me<span className="text-black">.</span></h2>
+          <p className="text-gray-700 text-lg leading-relaxed text-justify">
+            I'm Biswajit Karmakar, a dedicated and creative web developer and graphic designer
+            with a passion for building visually appealing and user-friendly digital experiences.
+            With a strong foundation in front-end technologies and an eye for design,
+            I strive to bridge the gap between functionality and aesthetics.
+            When I'm not coding or designing, I enjoy learning new tools, exploring tech trends,
+            and solving creative problems.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutMe;
