@@ -1,12 +1,12 @@
 import { useState } from "react";
-import siteImg1 from "../assets/projects/site-1.jpg";
-import siteImg2 from "../assets/projects/site-2.png";
-import siteImg3 from "../assets/projects/site-3.png";
-import siteImg4 from "../assets/projects/site-4.png";
-import designImg1 from "../assets/projects/design-1.jpg";
-import designImg2 from "../assets/projects/design-2.jpg";
-import designImg3 from "../assets/projects/design-3.jpg";
-import designImg4 from "../assets/projects/design-4.jpg";
+import siteImg1 from "../assets/projects/site-1.webp";
+import siteImg2 from "../assets/projects/site-2.webp";
+import siteImg3 from "../assets/projects/site-3.webp";
+import siteImg4 from "../assets/projects/site-4.webp";
+import designImg1 from "../assets/projects/design-1.webp";
+import designImg2 from "../assets/projects/design-2.webp";
+import designImg3 from "../assets/projects/design-3.webp";
+import designImg4 from "../assets/projects/design-4.webp";
 
 const ProjectsSection = () => {
   // Sample data ─ swap in your own screenshots / links
@@ -14,17 +14,17 @@ const ProjectsSection = () => {
     {
       title: "E-Education Site",
       image: siteImg1,
-      link: "https://softqonic.com",
+      link: "https://growlearn.netlify.app",
     },
     {
       title: "Health & Wellness Site",
       image: siteImg2,
-      link: "https://softqonic.com",
+      link: "https://github.com/biswajitkarmakar03/Health_Wellness_Website",
     },
     {
       title: "Travel Planner App",
       image: siteImg3,
-      link: "https://softqonic.com",
+      link: "https://github.com/biswajitkarmakar03/Travel-React-JS",
     },
     {
       title: "Service Site [Client Work]",
@@ -35,24 +35,24 @@ const ProjectsSection = () => {
 
   const designProjects = [
     {
-      title: "Branding Mock‑up",
+      title: "Social Media Creatives",
       image: designImg1,
-      link: "https://softqonic.com",
+      link: "https://drive.google.com/drive/folders/1I7qyBgiEp_gVkTyUro5wmtfcSx2MhqV_?usp=sharing",
     },
     {
       title: "Social Media Creatives",
       image: designImg2,
-      link: "https://softqonic.com",
+      link: "https://drive.google.com/drive/folders/1I7qyBgiEp_gVkTyUro5wmtfcSx2MhqV_?usp=sharing",
     },
     {
       title: "Social Media Creatives",
       image: designImg3,
-      link: "https://softqonic.com",
+      link: "https://drive.google.com/drive/folders/1I7qyBgiEp_gVkTyUro5wmtfcSx2MhqV_?usp=sharing",
     },
     {
       title: "Social Media Creatives",
       image: designImg4,
-      link: "https://softqonic.com",
+      link: "https://drive.google.com/drive/folders/1I7qyBgiEp_gVkTyUro5wmtfcSx2MhqV_?usp=sharing",
     },
   ];
 
@@ -62,7 +62,7 @@ const ProjectsSection = () => {
   const projects = activeTab === "websites" ? websiteProjects : designProjects;
 
   return (
-    <section id="projects" className="bg-white py-20">
+    <section id="projects" className="bg-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl sm:text-5xl font-bold text-indigo-600 mb-8 text-center">
           Projects<span className="text-black">.</span>

@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaBehance } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
         {/* Right - Social Icons */}
         <div className="flex gap-4 text-gray-500 text-xl">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/biswajitkarmakar03"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-indigo-600 transition"
@@ -30,7 +30,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/biswajit-karmakar03"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-indigo-600 transition"
@@ -38,12 +38,12 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://dribbble.com/yourusername"
+            href="https://www.behance.net/biswajikarmaka15"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-indigo-600 transition"
           >
-            <FaDribbble />
+            <FaBehance />
           </a>
         </div>
       </div>
