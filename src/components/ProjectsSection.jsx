@@ -53,7 +53,7 @@ const ProjectsSection = () => {
   const projects = activeTab === "websites" ? websiteProjects : designProjects;
 
   return (
-    <section id="projects" className="bg-gray-100 py-20">
+    <section id="projects" className="bg-gray-100 py-20 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl sm:text-5xl font-bold text-indigo-600 mb-8 text-center">
           Projects<span className="text-black">.</span>
