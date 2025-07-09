@@ -1,12 +1,16 @@
 import { Download } from "lucide-react";
-import heroImage from "../assets/hero.webp"; // Keep image in src/assets
+import heroImage from "../assets/hero.webp";
 import "../styles/hero.css";
 
 const HeroSection = () => {
   return (
-    <section className="bg-white h-screen flex items-center" id="home">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
-        
+    <section className="relative bg-white h-screen flex items-center overflow-hidden" id="home">
+      {/* Gradient Blobs */}
+      <div className="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-3xl opacity-30 animate-pulse-slow z-0"></div>
+      <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-full blur-3xl opacity-30 animate-pulse-slow z-0"></div>
+
+      {/* Main Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* Left */}
         <div className="text-center md:text-left space-y-4">
           <h1 className="text-4xl font-bold text-gray-800">Hi,</h1>
@@ -18,15 +22,12 @@ const HeroSection = () => {
           </p>
 
           <div className="flex justify-center pt-10 md:justify-start gap-4">
-            {/* Hire Me */}
             <a
               href="mailto:biswajitkarmakar404@gmail.com"
               className="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition"
             >
               Hire Me
             </a>
-
-            {/* Download CV */}
             <a
               href="/Biswajit-Karmakar.pdf"
               download="Biswajit-Karmakar.pdf"
