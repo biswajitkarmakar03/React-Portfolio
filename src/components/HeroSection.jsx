@@ -4,7 +4,7 @@ import "../styles/hero.css";
 
 const HeroSection = () => {
   return (
-    <section className="bg-white h-screen flex items-center" id="home">
+    <section className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-3xl opacity-30 animate-pulse-slow z-0 h-screen flex items-center" id="home">
       <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         
         {/* Left */}
