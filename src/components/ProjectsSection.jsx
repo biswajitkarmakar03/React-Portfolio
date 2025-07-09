@@ -2,35 +2,31 @@ import { useState } from "react";
 import siteImg1 from "../assets/projects/site-1.webp";
 import siteImg2 from "../assets/projects/site-2.webp";
 import siteImg3 from "../assets/projects/site-3.webp";
-import siteImg4 from "../assets/projects/site-4.webp";
 import designImg1 from "../assets/projects/design-1.webp";
 import designImg2 from "../assets/projects/design-2.webp";
 import designImg3 from "../assets/projects/design-3.webp";
-import designImg4 from "../assets/projects/design-4.webp";
 
 const ProjectsSection = () => {
   // Sample data ─ swap in your own screenshots / links
   const websiteProjects = [
     {
       title: "E-Education Site",
+      description: "Responsive EdTech website frontend using BootStrap, featuring a carousal course listings, instructor profiles, enrollment forms, and modern UI.",
       image: siteImg1,
       link: "https://growlearn.netlify.app",
     },
     {
       title: "Health & Wellness Site",
+      description: "Dynamic Health & Wellness website using Bootstrap, PHP, and MySQL with login/signup, user dashboard, course purchase and responsive design.",
       image: siteImg2,
       link: "https://github.com/biswajitkarmakar03/Health_Wellness_Website",
     },
     {
       title: "Travel Planner App",
+      description: "Interactive travel planner using React, React Hooks, and Sass. Features destination search, itinerary builder, responsive UI, and real-time trip customization.",
       image: siteImg3,
       link: "https://github.com/biswajitkarmakar03/Travel-React-JS",
-    },
-    {
-      title: "Service Site [Client Work]",
-      image: siteImg4,
-      link: "https://softqonic.com",
-    },
+    }
   ];
 
   const designProjects = [
@@ -47,11 +43,6 @@ const ProjectsSection = () => {
     {
       title: "Social Media Creatives",
       image: designImg3,
-      link: "https://drive.google.com/drive/folders/1I7qyBgiEp_gVkTyUro5wmtfcSx2MhqV_?usp=sharing",
-    },
-    {
-      title: "Social Media Creatives",
-      image: designImg4,
       link: "https://drive.google.com/drive/folders/1I7qyBgiEp_gVkTyUro5wmtfcSx2MhqV_?usp=sharing",
     },
   ];
@@ -105,6 +96,9 @@ const ProjectsSection = () => {
                 <h3 className="text-lg font-semibold text-gray-800">
                   {project.title}
                 </h3>
+                <p className="text-sm text-gray-500">
+                  {project.description}
+                </p>
               </div>
             </a>
           ))}
