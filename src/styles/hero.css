@@ -10,3 +10,7 @@
 .animate-updown {
   animation: updown 3s ease-in-out infinite;
 }
+
+img {
+     mix-blend-mode: multiply;
+}
