@@ -1,27 +1,27 @@
     import reactLogo from "../assets/skills/react.webp";
     import tailwindLogo from "../assets/skills/tailwind.webp";
-    import nodeLogo from "../assets/skills/node.webp";
     import phpLogo from "../assets/skills/php.webp";
     import mysqlLogo from "../assets/skills/mysql.webp";
     import gitLogo from "../assets/skills/git.webp";
     import psLogo from "../assets/skills/ps.webp";
-    import exLogo from "../assets/skills/express.webp";
-    import dbLogo from "../assets/skills/mongo.webp";
     import figmaLogo from "../assets/skills/figma.webp"
+    import wordpress from "../assets/skills/wordpress.webp";
+    import js from "../assets/skills/js.webp";
+    import bootstrap from "../assets/skills/bootstrap.webp";
+    import java from "../assets/skills/java.webp";
 
     const SkillsSection = () => {
     const skills = [
+        { name: "JavaScript", logo: js },
         { name: "React", logo: reactLogo },
-        { name: "Tailwind", logo: tailwindLogo },
-        { name: "Node.js", logo: nodeLogo },
-        { name: "Mongo DB", logo: dbLogo },
-        { name: "Express Js", logo: exLogo },
+        { name: "WordPress", logo: wordpress },
         { name: "PHP", logo: phpLogo },
+        { name: "Java", logo: java },
         { name: "MySQL", logo: mysqlLogo },
+        { name: "Tailwind", logo: tailwindLogo },
+        { name: "Bootstrap", logo: bootstrap },
         { name: "GitHub", logo: gitLogo },
-        { name: "PhotoShop", logo: psLogo },
-        { name: "Figma", logo: figmaLogo },
-        
+        { name: "PhotoShop", logo: psLogo },        
         
     ];
 
