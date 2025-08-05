@@ -39,17 +39,17 @@ const ProjectsSection = () => {
     {
       title: "Social Media Creatives",
       image: designImg1,
-      link: "https://drive.google.com/drive/folders/1I7qyBgiEp_gVkTyUro5wmtfcSx2MhqV_?usp=sharing",
+      link: "#",
     },
     {
       title: "Social Media Creatives",
       image: designImg2,
-      link: "https://drive.google.com/drive/folders/1I7qyBgiEp_gVkTyUro5wmtfcSx2MhqV_?usp=sharing",
+      link: "#",
     },
     {
       title: "Social Media Creatives",
       image: designImg3,
-      link: "https://drive.google.com/drive/folders/1I7qyBgiEp_gVkTyUro5wmtfcSx2MhqV_?usp=sharing",
+      link: "#",
     },
   ];
 
