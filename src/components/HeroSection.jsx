@@ -255,13 +255,13 @@ const HeroSection = () => {
 
             {/* Social Links - Glass Style */}
             <div className="flex justify-center lg:justify-start gap-3 pt-6">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 border border-white/10 rounded-xl hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group backdrop-blur-sm">
+              <a href="https://github.com/biswajitkarmakar03" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 border border-white/10 rounded-xl hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group backdrop-blur-sm">
                 <Github className="w-5 h-5 text-gray-400 group-hover:text-indigo-400 group-hover:scale-110 transition-all duration-300" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 border border-white/10 rounded-xl hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group backdrop-blur-sm">
+              <a href="https://www.linkedin.com/in/biswajit-karmakar03" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 border border-white/10 rounded-xl hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group backdrop-blur-sm">
                 <Linkedin className="w-5 h-5 text-gray-400 group-hover:text-indigo-400 group-hover:scale-110 transition-all duration-300" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 border border-white/10 rounded-xl hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group backdrop-blur-sm">
+              <a href="https://biswajitkarmakar.netlify.app" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 border border-white/10 rounded-xl hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group backdrop-blur-sm">
                 <svg className="w-5 h-5 text-gray-400 group-hover:text-indigo-400 group-hover:scale-110 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
                 </svg>

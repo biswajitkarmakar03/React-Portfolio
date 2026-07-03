@@ -15,7 +15,7 @@ const Footer = () => {
 
           <div className="flex gap-3">
             <a 
-              href="#" 
+              href="https://github.com/biswajitkarmakar03" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 bg-white/5 border border-white/10 rounded-lg hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group"
@@ -23,7 +23,7 @@ const Footer = () => {
               <Github className="w-5 h-5 text-gray-500 group-hover:text-indigo-400" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/biswajit-karmakar03" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 bg-white/5 border border-white/10 rounded-lg hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group"
