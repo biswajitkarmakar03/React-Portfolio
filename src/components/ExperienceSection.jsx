@@ -23,7 +23,7 @@ const ExperienceSection = () => {
     {
       title: "Software Developer Intern",
       company: "WbElysium",
-      location: "Kolkata",
+      location: "Burdwan",
       period: "Apr 2023 – Sept 2023",
       achievements: [
         "Debugged and resolved 20+ critical software defects",
