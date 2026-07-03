@@ -1,56 +1,47 @@
-import { FaGithub, FaLinkedin, FaBehance } from "react-icons/fa";
+// src/components/Footer.jsx
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 border-t border-gray-200 py-8">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-        
-        {/* Left - Brand */}
-        <div className="text-xl font-bold text-indigo-600">
-          Biswajit<span className="text-black">.</span>
-        </div>
+    <footer className="bg-[#050508] border-t border-white/5 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-center md:text-left">
+            <h3 className="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent font-mono">
+              Biswajit Karmakar
+            </h3>
+            <p className="text-gray-500 text-sm font-mono">Software Developer</p>
+          </div>
 
-        {/* Center - Links */}
-        <div className="flex flex-wrap justify-center gap-6 text-gray-600 font-medium">
-          <a href="#home" className="hover:text-indigo-600 transition">Home</a>
-          <a href="#about" className="hover:text-indigo-600 transition">About</a>
-          <a href="#skills" className="hover:text-indigo-600 transition">Skills</a>
-          <a href="#projects" className="hover:text-indigo-600 transition">Projects</a>
-          <a href="#contact" className="hover:text-indigo-600 transition">Contact</a>
-        </div>
+          <div className="flex gap-3">
+            <a 
+              href="#" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 bg-white/5 border border-white/10 rounded-lg hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group"
+            >
+              <Github className="w-5 h-5 text-gray-500 group-hover:text-indigo-400" />
+            </a>
+            <a 
+              href="#" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 bg-white/5 border border-white/10 rounded-lg hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group"
+            >
+              <Linkedin className="w-5 h-5 text-gray-500 group-hover:text-indigo-400" />
+            </a>
+            <a 
+              href="mailto:biswajitkarmakar404@gmail.com"
+              className="p-2 bg-white/5 border border-white/10 rounded-lg hover:border-indigo-500 hover:bg-indigo-500/10 transition-all duration-300 group"
+            >
+              <Mail className="w-5 h-5 text-gray-500 group-hover:text-indigo-400" />
+            </a>
+          </div>
 
-        {/* Right - Social Icons */}
-        <div className="flex gap-4 text-gray-500 text-xl">
-          <a
-            href="https://github.com/biswajitkarmakar03"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-indigo-600 transition"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/biswajit-karmakar03"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-indigo-600 transition"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://www.behance.net/biswajikarmaka15"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-indigo-600 transition"
-          >
-            <FaBehance />
-          </a>
+          <p className="text-gray-500 text-sm font-mono flex items-center gap-1">
+            Made with <Heart className="w-4 h-4 text-red-400 animate-pulse" /> © {new Date().getFullYear()}
+          </p>
         </div>
-      </div>
-
-      {/* Bottom copyright */}
-      <div className="text-center text-sm text-gray-400 mt-6">
-        &copy; {new Date().getFullYear()} Biswajit Karmakar. All rights reserved.
       </div>
     </footer>
   );

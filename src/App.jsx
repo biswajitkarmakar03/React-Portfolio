@@ -1,21 +1,27 @@
-import AboutMe from "./components/AboutMe";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
-import ProjectsSection from "./components/ProjectsSection";
-import SkillsSection from "./components/SkillsSection";
+// App.jsx
+import React from 'react';
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import SkillsSection from './components/SkillsSection';
+import ExperienceSection from './components/ExperienceSection';
+import ProjectsSection from './components/ProjectsSection';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
+import Navigation from './components/Navigation';
 
-export default function App() {
+function App() {
   return (
-    <>
-      <Navbar />
+    <div className="font-sans antialiased bg-[#0a0a0f]">
+      <Navigation />
       <HeroSection />
-      <AboutMe />
+      <AboutSection />
       <SkillsSection />
+      <ExperienceSection />
       <ProjectsSection />
       <ContactSection />
       <Footer />
-    </>
-  )
+    </div>
+  );
 }
+
+export default App;

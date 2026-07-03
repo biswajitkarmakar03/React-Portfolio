@@ -1,16 +1,170 @@
-@keyframes updown {
-  0%, 100% {
-    transform: translateY(0px);
+/* styles/hero.css */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(3deg); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(20px) rotate(-3deg); }
+}
+
+@keyframes float-slower {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(5deg); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.05); }
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes scroll {
+  0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(16px); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  50% {
-    transform: translateY(-20px);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.animate-updown {
-  animation: updown 3s ease-in-out infinite;
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-img {
-     mix-blend-mode: multiply;
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-slower {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-slower-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes spin-slowest {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-slowest-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 7s ease-in-out infinite;
+}
+
+.animate-float-slower {
+  animation: float-slower 8s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}
+
+.animate-scroll {
+  animation: scroll 2s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 4s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-slower {
+  animation: spin-slower 30s linear infinite;
+}
+
+.animate-spin-slower-reverse {
+  animation: spin-slower-reverse 30s linear infinite;
+}
+
+.animate-spin-slowest {
+  animation: spin-slowest 40s linear infinite;
+}
+
+.animate-spin-slowest-reverse {
+  animation: spin-slowest-reverse 40s linear infinite;
+}
+
+/* Typewriter Effect - Enhanced */
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #818cf8;
+  animation: typewriter 3.5s steps(30) 1s forwards, blink 1s step-end infinite;
+  max-width: 0;
+}
+
+@keyframes typewriter {
+  from { max-width: 0; }
+  to { max-width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: #818cf8; }
+  50% { border-color: transparent; }
+}
+
+/* Responsive Typewriter */
+@media (max-width: 640px) {
+  .typewriter-text {
+    animation: none;
+    white-space: normal;
+    border-right: none;
+    max-width: 100%;
+  }
+}
+
+/* Hover Effects */
+.group:hover .group-hover\:animate-spin-slower {
+  animation-duration: 15s;
+}
+
+.group:hover .group-hover\:animate-spin-slowest-reverse {
+  animation-duration: 20s;
+}
+
+/* Glow Pulse for Rings */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.1); }
+  50% { box-shadow: 0 0 40px rgba(99, 102, 241, 0.3); }
 }

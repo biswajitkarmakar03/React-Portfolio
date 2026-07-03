@@ -1,53 +1,95 @@
-    import reactLogo from "../assets/skills/react.webp";
-    import tailwindLogo from "../assets/skills/tailwind.webp";
-    import phpLogo from "../assets/skills/php.webp";
-    import mysqlLogo from "../assets/skills/mysql.webp";
-    import gitLogo from "../assets/skills/git.webp";
-    import psLogo from "../assets/skills/ps.webp";
-    import figmaLogo from "../assets/skills/figma.webp"
-    import wordpress from "../assets/skills/wordpress.webp";
-    import js from "../assets/skills/js.webp";
-    import bootstrap from "../assets/skills/bootstrap.webp";
-    import java from "../assets/skills/java.webp";
+// src/components/SkillsSection.jsx
+import { Code2, Database, Layout, Server, GitBranch, Terminal, Cpu, Zap } from "lucide-react";
 
-    const SkillsSection = () => {
-    const skills = [
-        { name: "JavaScript", logo: js },
-        { name: "React", logo: reactLogo },
-        { name: "WordPress", logo: wordpress },
-        { name: "PHP", logo: phpLogo },
-        { name: "Java", logo: java },
-        { name: "MySQL", logo: mysqlLogo },
-        { name: "Tailwind", logo: tailwindLogo },
-        { name: "Bootstrap", logo: bootstrap },
-        { name: "GitHub", logo: gitLogo },
-        { name: "PhotoShop", logo: psLogo },        
-        
-    ];
+const SkillsSection = () => {
+  const skills = [
+    {
+      category: "Programming Languages",
+      icon: Code2,
+      items: ["Java", "PHP", "JavaScript"],
+      color: "from-yellow-500/20 to-orange-500/20",
+      borderColor: "border-yellow-500/30"
+    },
+    {
+      category: "Frameworks",
+      icon: Server,
+      items: ["Laravel", "CodeIgniter"],
+      color: "from-red-500/20 to-pink-500/20",
+      borderColor: "border-red-500/30"
+    },
+    {
+      category: "Frontend",
+      icon: Layout,
+      items: ["HTML5", "CSS3", "Bootstrap", "Tailwind CSS"],
+      color: "from-blue-500/20 to-cyan-500/20",
+      borderColor: "border-blue-500/30"
+    },
+    {
+      category: "Database",
+      icon: Database,
+      items: ["MySQL", "SQL"],
+      color: "from-green-500/20 to-emerald-500/20",
+      borderColor: "border-green-500/30"
+    },
+    {
+      category: "Tools & Technologies",
+      icon: Terminal,
+      items: ["Git", "GitHub", "VS Code", "XAMPP", "Composer", "Postman"],
+      color: "from-purple-500/20 to-violet-500/20",
+      borderColor: "border-purple-500/30"
+    },
+    {
+      category: "Concepts",
+      icon: Cpu,
+      items: ["OOP", "MVC Architecture", "REST APIs"],
+      color: "from-indigo-500/20 to-purple-500/20",
+      borderColor: "border-indigo-500/30"
+    }
+  ];
 
-    return (
-        <section className="bg-gray-50 py-20" id="skills">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-            <h2 className="text-4xl sm:text-5xl font-bold text-indigo-600 mb-12">Skills<span className="text-black">.</span></h2>
-            
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
-            {skills.map((skill, index) => (
-                <div
-                key={index}
-                className="flex flex-col items-center bg-white rounded-xl shadow-md p-6 transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-                >
-                <img
-                    src={skill.logo}
-                    alt={skill.name}
-                    className="w-16 h-16 object-contain mb-3"
-                />
-                <p className="text-gray-800 font-medium">{skill.name}</p>
-                </div>
-            ))}
-            </div>
+  return (
+    <section className="py-20 bg-[#0d0d1a] border-t border-white/5" id="skills">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-indigo-400 text-sm font-mono mb-4">
+            <Zap className="w-4 h-4" />
+            <span>Technical Skills</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold">
+            <span className="text-gray-200">My</span>
+            <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent ml-2">Tech Arsenal</span>
+          </h2>
+          <div className="w-24 h-0.5 bg-gradient-to-r from-indigo-400 to-purple-400 mx-auto mt-4"></div>
+          <p className="text-gray-400 mt-4 max-w-2xl mx-auto font-mono">
+            Technologies and tools I work with to build amazing applications
+          </p>
         </div>
-        </section>
-    );
-    };
 
-    export default SkillsSection;
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className={`group bg-gradient-to-br ${skill.color} border ${skill.borderColor} p-6 rounded-xl backdrop-blur-sm hover:shadow-[0_0_40px_rgba(99,102,241,0.05)] transition-all duration-300 transform hover:-translate-y-1`}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="p-3 bg-white/5 rounded-lg group-hover:bg-white/10 transition-colors duration-300">
+                  <skill.icon className="w-6 h-6 text-indigo-400" />
+                </div>
+                <h3 className="font-semibold text-gray-200 font-mono">{skill.category}</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skill.items.map((item, i) => (
+                  <span key={i} className="px-3 py-1 bg-white/5 border border-white/10 text-gray-300 text-sm rounded-lg font-mono hover:border-indigo-500/50 hover:text-indigo-400 transition-all duration-300">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SkillsSection;
